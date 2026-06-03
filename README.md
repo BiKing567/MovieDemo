@@ -1,6 +1,6 @@
 # MovieDemo
 
-一款跨平台视频播放器应用，支持 macOS 和 iOS 系统，可解析并播放多个视频源的内容。
+一款跨平台视频播放器应用，支持 macOS 和 iOS （以后）系统，可解析并播放多个视频源的内容。
 
 ## 功能特性
 
@@ -15,53 +15,6 @@
 
 - macOS 12.0+
 - iOS 15.0+
-- Xcode 14.0+
-- Swift 5.7+
-
-## 快速开始
-
-### 环境准备
-
-1. 安装 [XcodeGen](https://github.com/yonaskolb/XcodeGen)
-   ```bash
-   brew install xcodegen
-   ```
-
-### 构建项目
-
-1. 克隆仓库
-   ```bash
-   git clone https://github.com/BiKing567/MovieDemo.git
-   cd MovieDemo
-   ```
-
-2. 生成 Xcode 项目
-   ```bash
-   xcodegen generate
-   ```
-
-3. 使用 Xcode 打开项目
-   ```bash
-   open MovieDemo.xcodeproj
-   ```
-
-4. 选择目标平台并运行
-
-## 项目结构
-
-```
-MovieDemo/
-├── Sources/
-│   ├── App/               # 应用入口
-│   ├── Components/         # UI 组件
-│   ├── Models/            # 数据模型
-│   ├── Services/          # 业务逻辑
-│   └── Views/             # 视图
-├── Resources/             # 资源文件
-├── project.yml            # XcodeGen 配置
-├── LICENSE                # MIT 许可证
-└── README.md              # 说明文档
-```
 
 ## 技术栈
 
