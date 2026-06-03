@@ -1,0 +1,40 @@
+name: MovieDemo
+options:
+  bundleIdPrefix: com.moviedemo
+  deploymentTarget:
+    macOS: "12.0"
+    iOS: "15.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.5alpha"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  MovieDemo:
+    type: application
+    platform: [macOS, iOS]
+    sources:
+      - path: Sources
+        type: group
+      - path: Resources
+        type: group
+        excludes:
+          - LaunchScreen.storyboard
+    settings:
+      base:
+        INFOPLIST_FILE: Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.moviedemo.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+        CODE_SIGN_ENTITLEMENTS: Resources/MovieDemo.entitlements
+        ENABLE_PREVIEWS: YES
+      iOS:
+        LAUNCHSCREEN_STORYBOARD: Resources/LaunchScreen.storyboard
+    entitlements:
+      path: Resources/MovieDemo.entitlements
